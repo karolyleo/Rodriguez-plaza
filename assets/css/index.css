@@ -1,0 +1,15 @@
+.hero-primary-text {
+    color: #829285;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-secondary-color {
+    color: #B38D38;
+    font-weight: bold;
+}
+
+.hero-btn-color {
+    background: #B38D38;
+}
