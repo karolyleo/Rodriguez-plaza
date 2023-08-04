@@ -7,6 +7,11 @@
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/index.css"/>
+    <style>
+        .outlined-text {
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+    </style>
 </head>
 <body>
 <!--Navbar-->
@@ -33,14 +38,56 @@
 </nav>
 
 <!--Img/hero-->
-<div class="vw-100 bg-danger">
-    <img src="assets/img/Houston-skyline.jpg" class="img-fluid w-100" alt="Responsive image"/>
+<div class="position-relative">
+    <img src="assets/img/getty.jpg" class="img-fluid w-100" alt="Responsive image"/>
+<!--    <section class="container position-absolute top-0 start-50 translate-middle-x d-flex  justify-content-start text-white flex-column" style="height:100%">-->
+<!--        <h1 class="mb-0 hero-primary-text mt-4">A wealth of demonstrated expertise spanning over two decades.</h1>-->
+<!--        <div class="row mt-5">-->
+<!--            <div class="col-2 d-flex flex-column justify-content-between text-center">-->
+<!--                <h4 class="outlined-text">1999<br> Year Founded</h4>-->
+<!--                <h4 class="outlined-text">24+ <br>Years of <br>Experience</h4>-->
+<!--                <h4 class="outlined-text">18,888+ <br>Commercial <br>Square Feet</h4>-->
+<!--            </div>-->
+<!--            <div class="col-9">-->
+<!--                <h4 class="outlined-text" style="line-height: 1.5">Welcome to Rodriguez Plaza Inc, a distingushed, privately held real estate investment firm proudly based in the heart of Texas. In the year 19"99, Rigoberto C. Rodriguez established "Rodriguez Plaza Inc.," a Texas corporation specifically devoted to real estate investments. With a visionary approach, we have been actively engaged in shaping the real estate landscape and maximizing investment opportunities ever since. As a family-owned enterprise, we are committed to delivering excellence in the realm of real estate investments. Our headquarters serve as the driving force behind our unwavering dedication to creating value and fostering prosperous ventures.</h4>-->
+<!--                <br>-->
+<!--                <h4 class="outlined-text" style="line-height: 1.5">We proudly serve as the esteemed overseers of lease agreements for the renowned Wayside Center, an exceptional retail destination spanning over 18,888 square feet of prime commercial property on an impressive 1.93 acres of land. This distinguished accomplishment, combined with our unmatched expertise in strategic land acquisitions and property leasing, showcases our unwavering commitment to excellence in the dynamic realm of real estate. Despite managing a single building, our firm's success stems from prudent decision-making, meticulous attention to detail, and a steadfast dedication to client satisfaction. As a privately held, family-owned, commercial real estate firm, we have firmly established ourselves as a cornerstone of reliability and success within the industry. As we continue to grow and embrace new opportunities, we aim to expand our influence and occupy a thriving role in shaping the future of commercial real estate. Discover a world of opportunities with us at Rodrigue Plaza Inc.-->
+<!--                </h4>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 </div>
 
 <!--TBD-->
-<div class="vw-100" style="height: 30vh">
-<!--    Empty for now-->
-    <h1>About us coming soon!</h1>
+<div class="container">
+    <section class="row mt-5">
+        <div class="col-12 col-lg-8">
+            <h1>We eagerly welcome your valuable input.</h1>
+            <p class="mt-4 mb-5 fw-light">Should you have any inquiries or concerns, we encourage you to get in touch with us without delay. Kindly complete the form, and we will promptly provide you with all the information you may require.</p>
+        </div>
+        <div class="col-12 col-lg-4">
+            <form>
+                <div class="row m-3">
+                    <label for="inputName"></label><input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+                <div class="row m-3">
+                    <label for="inputEmail"></label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                </div>
+                <div class="row m-3">
+                    <label for="inputPhone"></label>
+                    <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number">
+                </div>
+                <div class="row m-3">
+                    <label for="inputMessage"></label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+                </div>
+                <div class="row m-3 mb-4">
+                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
 </div>
 
 <!--Footer-->
