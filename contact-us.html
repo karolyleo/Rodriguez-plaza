@@ -60,29 +60,29 @@
         <!-- Empty Column for Spacing -->
         <div class="col"></div>
 
-        <div class="col-7">
+        <div class="col-lg-7 col-sm-12">
             <h6 class="m-0 mt-5">Rodriguez Plaza Inc.</h6>
             <h6 class="m-0">2120 S Wayside Dr</h6>
             <h6 class="m-0">Houston, Texas 77023</h6>
             <h6 class="m-0 mt-4">P: (713) 921-1144</h6>
-            <h6 class="m-0">E: frontdesk@rodriguezplazainc.com</h6>
+            <h6 class="m-0 mb-3">E: frontdesk@rodriguezplazainc.com</h6>
         </div>
-        <div class="col-4">
-            <form class="mt-1">
+        <div class="col-lg-4 col-sm-8 offset-sm-2 offset-lg-0">
+            <form id="out-reach" method="POST" class="mt-1">
                 <div class="row m-3">
-                    <label for="inputName"></label><input type="text" class="form-control" id="inputName" placeholder="Name">
+                    <label for="inputName"></label><input type="text" class="form-control" id="inputName" required placeholder="Name">
                 </div>
                 <div class="row m-3">
                     <label for="inputEmail"></label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                    <input type="email" class="form-control" id="inputEmail" required placeholder="Email Address">
                 </div>
                 <div class="row m-3">
                     <label for="inputPhone"></label>
-                    <input type="tel" class="form-control" id="inputPhone" placeholder="Phone Number">
+                    <input type="tel" class="form-control" id="inputPhone" required placeholder="Phone Number">
                 </div>
                 <div class="row m-3">
                     <label for="inputMessage"></label>
-                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="inputMessage" rows="4" required placeholder="Message"></textarea>
                 </div>
                 <div class="row m-3 mb-4">
                     <button type="submit" class="btn btn-outline-dark">Submit</button>
@@ -104,7 +104,7 @@
                 <a class="nav-link m-3" href="about-us.html">ABOUT</a>
                 <a class="nav-link m-3" href="contact-us.html">CONTACT</a>
             </div>
-            <hr  class="m-3 mt-0" style="width: 55%;">
+            <hr  class="m-3 mt-0" style="width: 65%;">
             <p class="m-3" style="font-size: 13px;font-weight: lighter">©2023 Rodriguez Plaza Inc. &nbsp;&nbsp; All Rights Reserved. | Privacy Policy</p>
         </div>
 
@@ -127,10 +127,11 @@
 <script>
     var map = L.map('map').setView([51.5, -0.1], 12);
     L.tileLayer('https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png?rapidapi-key= haha you thought..', {
-        attribution: 'Created by Leo',
+        attribution: '',
         maxZoom: 19
     }).addTo(map);
 //    Why does map no render :(
 </script>
+<script src="assets/js/contact-us.js"></script>
 </body>
 </html>
